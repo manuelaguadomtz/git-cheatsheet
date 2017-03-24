@@ -1,4 +1,4 @@
-=================Configurations=================================================================================
+=================Configurations=============================================================================
 git config --global user.name "John Doe"  # To set the global username
 git config --global user.mail "johndoe@domain.com"  # To set the global user email
 
@@ -14,9 +14,10 @@ git config --global --replace-all user.name "New User Name"  # To replace config
 git config core.fileMode false  # To ignore file mode changes (i.e file permissions)
 
 git config --global core.autocrlf true  # To ignore new line character differences between systems (windows-linux)
-==================================================================================================================
 
-===================Working with remotes===========================================================================
+=============================================================================================================
+
+===================Working with remotes======================================================================
 git remote  # List all the configured remote repositories
 git remote rm <remote>  # Remove a remote repository
 
@@ -26,19 +27,21 @@ git push REMOTE --all
 
 # To push all your tags:
 git push REMOTE --tags
-==================================================================================================================
 
-===================Working with Branches==========================================================================
+=============================================================================================================
+
+===================Working with Branches=====================================================================
 git branch  # List all the branches
 git checkout <branch>  # Make a switch to a specified branch
 git branch -d <branch>  # Deleting specified branch
 
 git branch -u <remote>/<branch> # To track a remote branch
 
-==================================================================================================================
+=============================================================================================================
 
-==================Miscelaneous====================================================================================
+==================Miscelaneous===============================================================================
 
 git log --decorate --graph -5   # To show the current local history (-5 last five commits)
-==================================================================================================================
+
+=============================================================================================================
 
