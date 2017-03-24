@@ -37,5 +37,3 @@ git branch -u <remote>/<branch> # To track a remote branch
 
 git log --decorate --graph -5   # To show the current local history (-5 last five commits)
 
-
->>>>>>> d0574000e0ed21eb10faa11767553b68fcb83f11
