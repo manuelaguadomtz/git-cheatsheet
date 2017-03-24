@@ -28,6 +28,14 @@ git push REMOTE --all
 git push REMOTE --tags
 ==================================================================================================================
 
-git branch -u origin/master
+===================Working with Branches==========================================================================
+git branch  # List all the branches
+git checkout <branch>  # Make a switch to a specified branch
+git branch -d <branch>  # Deleting specified branch
+
+git branch -u <remote>/<branch> # To track a remote branch
+
+==================================================================================================================
+
 
 
