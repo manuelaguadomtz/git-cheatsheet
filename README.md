@@ -16,6 +16,18 @@ git config core.fileMode false  # To ignore file mode changes (i.e file permissi
 git config --global core.autocrlf true  # To ignore new line character differences between systems (windows-linux)
 ==================================================================================================================
 
+===================Working with remotes===========================================================================
+git remote  # List all the configured remote repositories
+git remote rm <remote>  # Remove a remote repository
+
+# To push all your branches, use either (replace REMOTE with the name of the remote, for example "origin"):
+git push REMOTE '*:*'
+git push REMOTE --all
+
+# To push all your tags:
+git push REMOTE --tags
+==================================================================================================================
+
 git branch -u origin/master
 
 
