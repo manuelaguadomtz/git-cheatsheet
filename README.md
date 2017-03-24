@@ -1,4 +1,5 @@
 =================Configurations=============================================================================
+
 git config --global user.name "John Doe"  # To set the global username
 git config --global user.mail "johndoe@domain.com"  # To set the global user email
 
