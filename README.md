@@ -40,5 +40,7 @@ git branch -u <remote>/<branch> # To track a remote branch
 
 ==================Miscelaneous===============================================================================
 
+git log -1  # Showing last commit
+
 git log --decorate --graph -5   # To show the current local history (-5 last five commits)
 
