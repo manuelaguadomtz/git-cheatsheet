@@ -1,46 +1,148 @@
-=================Configurations=============================================================================
+# Git cheatsheet
 
-git config --global user.name "John Doe"  # To set the global username
+> Git features that have proven to be very useful for developers
 
-git config --global user.mail "johndoe@domain.com"  # To set the global user email
+## Configurations
 
-git config --local user.name "John Doe"  # To set the local username
+`# set the global username`
 
-git config --local user.mail "johndoe@domain.com"  # To set the local user email
+```bash
+git config --global user.name "John Doe"
+```
 
-git config --global --unset-all user.name  # To unset things
+`# set the global user email`
 
-git config --global --list  # To list global configurations
+```bash
+git config --global user.mail "johndoe@domain.com"
+```
 
-git config --global --replace-all user.name "New User Name"  # To replace configurations
+`# set the local username`
 
-git config core.fileMode false  # To ignore file mode changes (i.e file permissions)
+```bash
+git config --local user.name "John Doe"
+```
 
-git config --global core.autocrlf true  # To ignore new line character differences between systems (windows-linux)
+`# set the local user email`
 
-===================Working with remotes======================================================================
+```bash
+git config --local user.mail "johndoe@domain.com"
+```
 
-git remote  # List all the configured remote repositories
+`# to unset a given configuration`
 
-git remote rm <remote>  # Remove a remote repository
+```bash
+git config --global --unset-all user.name
 
-git push <remote> --all # To push all your branches.
+```
 
-git push <remote> --tags # To push all your tags:
+`# to list global configurations`
 
-===================Working with Branches=====================================================================
+```bash
+git config --global --list
+```
 
-git branch  # List all the branches
+`# to replace configurations`
 
-git checkout <branch>  # Make a switch to a specified branch
+```bash
+git config --global --replace-all user.name "New User Name"
+```
 
-git branch -d <branch>  # Deleting specified branch
+`# to ignore file mode changes (i.e file permissions)`
 
-git branch -u <remote>/<branch> # To track a remote branch
+```bash
+git config core.fileMode false
+```
 
-==================Miscelaneous===============================================================================
+`# to ignore new line character differences between systems (windows-linux)`
 
-git log -1  # Showing last commit
+```bash
+git config --global core.autocrlf true
+```
 
-git log --decorate --graph -5   # To show the current local history (-5 last five commits)
+## Working with remotes
 
+`# list all the configured remote repositories`
+
+```bash
+git remote
+```
+
+`# remove a remote address for the repository`
+
+```bash
+git remote rm <remote>
+```
+
+`# to push all your branches.`
+
+```bash
+git push <remote> --all
+```
+
+`# to push all your tags`
+
+```bash
+git push <remote> --tags
+```
+
+## Working with Branches
+
+`# list all the branches`
+
+```bash
+git branch
+```
+
+`# list all the branches (local and repote branches)`
+
+```bash
+git branch --all
+```
+
+`# make a switch to a specified branch`
+
+```bash
+git checkout <branch>
+```
+
+`# deleting specified branch`
+
+```bash
+git branch -d <branch>
+```
+
+`# tracking a remote branch`
+
+```bash
+git branch -u <remote>/<branch>
+```
+
+## Reverting to previous states
+
+### Reverting Files
+
+`# showing file snapshot at specific commit`
+
+```bash
+git show <commit-sha>:relative/path/to/file/inside/repo
+```
+
+`# saving file snapshot at specific commit`
+
+```bash
+git show <commit-sha>:relative/path/to/file/inside/repo > /new/path/to/file/content/at/selected/commit
+```
+
+## Graph history visualization
+
+`# showing last commit`
+
+```bash
+git log -1 
+```
+
+`# showing the current local history (-5 last five commits)`
+
+```bash
+git log --decorate --graph -5
+```
