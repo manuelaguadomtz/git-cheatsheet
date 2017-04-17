@@ -44,15 +44,19 @@ git branch -u <remote>/<branch> # To track a remote branch
 
 ## Reverting to previous states
 
-### Files
+### Reverting Files
 
 `# showing file snapshot at specific commit`
 
+```bash
 git show <commit-sha>:relative/path/to/file/inside/repo
+```
 
 `# saving file snapshot at specific commit`
 
+```bash
 git show <commit-sha>:relative/path/to/file/inside/repo > /new/path/to/file/content/at/selected/commit
+```
 
 ## Miscelaneous
 
