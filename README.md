@@ -46,11 +46,11 @@ git branch -u <remote>/<branch> # To track a remote branch
 
 ### Reverting Files
 
-`# showing file snapshot at specific commit`
+* `# showing file snapshot at specific commit`
 
-```bash
-git show <commit-sha>:relative/path/to/file/inside/repo
-```
+* ```bash
+  git show <commit-sha>:relative/path/to/file/inside/repo
+  ```
 
 `# saving file snapshot at specific commit`
 
