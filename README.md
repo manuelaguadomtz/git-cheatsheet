@@ -61,28 +61,28 @@ git config --global core.autocrlf true
 
 ## Working with remotes
 
-``
+`# list all the configured remote repositories`
 
 ```bash
-git remote  # List all the configured remote repositories
+git remote
 ```
 
-``
+`# remove a remote address for the repository`
 
 ```bash
-git remote rm <remote>  # Remove a remote repository
+git remote rm <remote>
 ```
 
-``
+`# to push all your branches.`
 
 ```bash
-git push <remote> --all # To push all your branches.
+git push <remote> --all
 ```
 
-``
+`# to push all your tags`
 
 ```bash
-git push <remote> --tags # To push all your tags:
+git push <remote> --tags
 ```
 
 ## Working with Branches
@@ -144,5 +144,5 @@ git log -1
 `# showing the current local history (-5 last five commits)`
 
 ```bash
-git log --decorate --graph -5   # To 
+git log --decorate --graph -5
 ```
