@@ -117,6 +117,20 @@ git branch -d <branch>
 git branch -u <remote>/<branch>
 ```
 
+## Tagging
+
+`# pushing tags to the remote`
+
+```bash
+git push --tags
+```
+
+`# pushing commits and also tags to the remote`
+
+```bash
+git push --follow-tags
+```
+
 ## Reverting to previous states
 
 ### Reverting Files
