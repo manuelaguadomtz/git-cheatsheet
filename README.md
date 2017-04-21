@@ -93,7 +93,7 @@ git push <remote> --tags
 git branch
 ```
 
-`# list all the branches (local and repote branches)`
+`# list all the branches (local and remote branches)`
 
 ```bash
 git branch --all
