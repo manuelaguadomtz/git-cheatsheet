@@ -117,6 +117,18 @@ git branch -d <branch>
 git branch -u <remote>/<branch>
 ```
 
+`# To remove all the remote tracking branches that no longer exists`
+
+```bash
+git remote prune <remote>
+```
+
+`# To remove an specific remote tracking branch`
+
+```bash
+git branch -d -r <remote>/<branch>
+```
+
 ## Tagging
 
 `# pushing tags to the remote`
