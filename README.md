@@ -126,7 +126,7 @@ git remote prune <remote>
 `# To remove an specific remote tracking branch`
 
 ```bash
-git branch -d -r <origin>/<branch>
+git branch -d -r <remote>/<branch>
 ```
 
 ## Tagging
