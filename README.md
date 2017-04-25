@@ -85,18 +85,6 @@ git push <remote> --all
 git push <remote> --tags
 ```
 
-`# To remove all the remote tracking branches that no longer exists`
-
-```bash
-git remote prune <remote>
-```
-
-`# To remove an specific remote tracking branch`
-
-```bash
-git branch -d -r <origin>/<branch>
-```
-
 ## Working with Branches
 
 `# list all the branches`
@@ -127,6 +115,18 @@ git branch -d <branch>
 
 ```bash
 git branch -u <remote>/<branch>
+```
+
+`# To remove all the remote tracking branches that no longer exists`
+
+```bash
+git remote prune <remote>
+```
+
+`# To remove an specific remote tracking branch`
+
+```bash
+git branch -d -r <origin>/<branch>
 ```
 
 ## Tagging
