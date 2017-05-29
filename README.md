@@ -129,6 +129,17 @@ git remote prune <remote>
 git branch -d -r <remote>/<branch>
 ```
 
+`# To remove a remote branch`
+
+```bash
+git push <remote> --delete <branch>
+```
+
+```bash
+git push <remote> :<branch>
+```
+
+
 ## Tagging
 
 `# pushing tags to the remote`
