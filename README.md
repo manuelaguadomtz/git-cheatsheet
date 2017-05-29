@@ -136,7 +136,7 @@ git push <remote> --delete <branch>
 ```
 
 ```bash
-git push <origin> :<branch-name>
+git push <remote> :<branch>
 ```
 
 
