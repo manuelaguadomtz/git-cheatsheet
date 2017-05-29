@@ -135,6 +135,11 @@ git branch -d -r <remote>/<branch>
 git push <remote> --delete <branch>
 ```
 
+```bash
+git push <origin> :<branch-name>
+```
+
+
 ## Tagging
 
 `# pushing tags to the remote`
