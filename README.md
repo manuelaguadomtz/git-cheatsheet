@@ -59,6 +59,13 @@ git config core.fileMode false
 git config --global core.autocrlf true
 ```
 
+`# to configure a proxy server`
+
+```bash
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:proxy_port
+```
+
+
 ## Working with remotes
 
 `# list all the configured remote repositories`
