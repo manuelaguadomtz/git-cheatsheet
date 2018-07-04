@@ -86,12 +86,6 @@ git remote rm <remote>
 git push <remote> --all
 ```
 
-`# to push all your tags`
-
-```bash
-git push <remote> --tags
-```
-
 ## Working with Branches
 
 `# list all the branches`
@@ -152,13 +146,25 @@ git push <remote> :<branch>
 `# pushing tags to the remote`
 
 ```bash
-git push --tags
+git push <remote> --tags
 ```
 
 `# pushing commits and also tags to the remote`
 
 ```bash
 git push --follow-tags
+```
+
+`# removing a local tag`
+
+```bash
+git tag -d <tag-name>
+```
+
+`# removing a remote tag`
+
+```bash
+git push --delete <remote> tagName
 ```
 
 ## Reverting to previous states
