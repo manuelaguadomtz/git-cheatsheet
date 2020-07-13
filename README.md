@@ -4,62 +4,62 @@
 
 ## Configurations
 
-`# set the global username`
+#### Set the global username
 
 ```bash
 git config --global user.name "John Doe"
 ```
 
-`# set the global user email`
+#### Set the global user email
 
 ```bash
 git config --global user.mail "johndoe@domain.com"
 ```
 
-`# set the local username`
+#### Set the local username
 
 ```bash
 git config --local user.name "John Doe"
 ```
 
-`# set the local user email`
+#### Set the local user email
 
 ```bash
 git config --local user.mail "johndoe@domain.com"
 ```
 
-`# to unset a given configuration`
+#### To unset a given configuration
 
 ```bash
 git config --global --unset-all user.name
 
 ```
 
-`# to list global configurations`
+#### To list global configurations
 
 ```bash
 git config --global --list
 ```
 
-`# to replace configurations`
+#### To replace configurations
 
 ```bash
 git config --global --replace-all user.name "New User Name"
 ```
 
-`# to ignore file mode changes (i.e file permissions)`
+#### To ignore file mode changes (i.e file permissions)
 
 ```bash
 git config core.fileMode false
 ```
 
-`# to ignore new line character differences between systems (windows-linux)`
+#### To ignore new line character differences between systems (windows-linux)
 
 ```bash
 git config --global core.autocrlf true
 ```
 
-`# to configure a proxy server`
+#### To configure a proxy server
 
 ```bash
 git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:proxy_port
@@ -68,69 +68,69 @@ git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:proxy_
 
 ## Working with remotes
 
-`# list all the configured remote repositories`
+#### List all the configured remote repositories
 
 ```bash
-git remote
+git remote -v
 ```
 
-`# remove a remote address for the repository`
+#### Remove a remote server
 
 ```bash
 git remote rm <remote>
 ```
 
-`# to push all your branches.`
+## Working with Branches
+
+#### To push all your branches
 
 ```bash
 git push <remote> --all
 ```
 
-## Working with Branches
-
-`# list all the branches`
+#### List all the branches
 
 ```bash
 git branch
 ```
 
-`# list all the branches (local and remote branches)`
+#### List all the branches (local and remote branches)
 
 ```bash
 git branch --all
 ```
 
-`# make a switch to a specified branch`
+#### Make a switch to a specified branch
 
 ```bash
 git checkout <branch>
 ```
 
-`# deleting specified branch`
+#### Deleting specified branch
 
 ```bash
 git branch -d <branch>
 ```
 
-`# tracking a remote branch`
+#### Tracking a remote branch
 
 ```bash
 git branch -u <remote>/<branch>
 ```
 
-`# To remove all the remote tracking branches that no longer exists`
+#### To remove all the remote tracking branches that no longer exists
 
 ```bash
 git remote prune <remote>
 ```
 
-`# To remove an specific remote tracking branch`
+#### To remove an specific remote tracking branch
 
 ```bash
 git branch -d -r <remote>/<branch>
 ```
 
-`# To remove a remote branch`
+#### To remove a remote branch
 
 ```bash
 git push <remote> --delete <branch>
@@ -143,25 +143,25 @@ git push <remote> :<branch>
 
 ## Tagging
 
-`# pushing tags to the remote`
+#### Pushing tags to the remote
 
 ```bash
 git push <remote> --tags
 ```
 
-`# pushing commits and also tags to the remote`
+#### Pushing commits and also tags to the remote
 
 ```bash
 git push --follow-tags
 ```
 
-`# removing a local tag`
+#### Removing a local tag
 
 ```bash
 git tag -d <tag-name>
 ```
 
-`# removing a remote tag`
+#### Removing a remote tag
 
 ```bash
 git push --delete <remote> tagName
@@ -171,13 +171,13 @@ git push --delete <remote> tagName
 
 ### Reverting Files
 
-`# showing file snapshot at specific commit`
+#### Showing file snapshot at specific commit
 
 ```bash
 git show <commit-sha>:relative/path/to/file/inside/repo
 ```
 
-`# saving file snapshot at specific commit`
+#### Saving file snapshot at specific commit
 
 ```bash
 git show <commit-sha>:relative/path/to/file/inside/repo > /new/path/to/file/content/at/selected/commit
@@ -185,13 +185,13 @@ git show <commit-sha>:relative/path/to/file/inside/repo > /new/path/to/file/cont
 
 ## Graph history visualization
 
-`# showing last commit`
+#### Showing last commit
 
 ```bash
 git log -1 
 ```
 
-`# showing the current local history (-5 last five commits)`
+#### Showing the current local history (-5 last five commits)
 
 ```bash
 git log --decorate --graph -5
