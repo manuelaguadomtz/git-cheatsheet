@@ -1,6 +1,6 @@
 # Git cheatsheet
 
-> Git features that have proven to be very useful for developers
+> Git commands that have proven to be very useful for developers
 
 ## Configurations
 
