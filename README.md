@@ -65,6 +65,11 @@ git config --global core.autocrlf true
 git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:proxy_port
 ```
 
+#### To store credentials
+
+```bash
+git config --global credential.helper store
+```
 
 ## Working with remotes
 
