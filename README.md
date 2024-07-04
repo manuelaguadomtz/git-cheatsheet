@@ -201,3 +201,7 @@ git log -1
 ```bash
 git log --decorate --graph -5
 ```
+
+#### Showing commits by a specific user
+git show `git log --author=bob | grep ^commit | awk -F ' ' '{print $2}'`
+
